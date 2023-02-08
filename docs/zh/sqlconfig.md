@@ -4,19 +4,19 @@
 
 ## 配置
 
-| 数据库参数 | 值                  |
+|  数据库参数  | 值                  |
 | ---------- | ------------------- |
-| 地址       | 192.168.71.146:3306 |
-| 用户       | root                |
-| 密码       | root                |
-| 数据库     | thea                |
+| 地址        | localhost:3306      |
+| 用户        | root                |
+| 密码        | apijson             |
+| 数据库      | thea                |
 
 那么需要在 DemoSQLConfig，改为自己数据库对应的连配置
 
 ```java
 	static {
 		DEFAULT_DATABASE = DATABASE_MYSQL;  // TODO 默认数据库类型，改成你自己的
-		DEFAULT_SCHEMA = "sys";  // TODO 默认数据库名/模式，改成你自己的，默认情况是 MySQL: sys, PostgreSQL: public, SQL Server: dbo, Oracle: 
+		DEFAULT_SCHEMA = "thea";  // TODO 默认数据库名/模式，改成你自己的，默认情况是 MySQL: sys, PostgreSQL: public, SQL Server: dbo, Oracle: 
 
 		// 表名和数据库不一致的，需要配置映射关系。只使用 APIJSONORM 时才需要；
 		// 如果用了 apijson-framework 且调用了 APIJSONApplication.init 则不需要
