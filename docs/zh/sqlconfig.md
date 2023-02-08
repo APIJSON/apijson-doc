@@ -56,6 +56,6 @@
 
 ![use1](../.vuepress/public/assets/use1.png)
 
-其中 APIJSON 5.4 及以下必须导入 Function, Request, Access；APIJSON 6.x 必须导入 Function, Request, Access, Script。
+其中 APIJSON 5.4 及以下必须导入 Function, Request, Access；APIJSON 6.0+ 必须导入 Function, Request, Access, Script。
 
 导入完成之后。我们可以把项目跑起来看下，以刚刚配置的项目，项目是否能够连上数据库。其中也有一些初始化数据，可以方便我们测试。
