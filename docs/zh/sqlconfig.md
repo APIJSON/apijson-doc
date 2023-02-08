@@ -58,4 +58,6 @@
 
 其中 APIJSON 5.4 及以下必须导入 Function, Request, Access；APIJSON 6.0+ 必须导入 Function, Request, Access, Script。
 
+也可以直接导入 [APIJSON-Demo-Master/MySQL](https://github.com/APIJSON/APIJSON-Demo/tree/master/MySQL)/sys.sql，里面包含了 single 目录内所有表的 结构 与 数据。
+
 导入完成之后。我们可以把项目跑起来看下，以刚刚配置的项目，项目是否能够连上数据库。其中也有一些初始化数据，可以方便我们测试。
