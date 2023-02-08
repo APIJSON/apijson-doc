@@ -1,7 +1,7 @@
 # 介绍
 
 可以先看更清晰直观的视频教程 <br >
-https://search.bilibili.com/all?keyword=APIJSON&from_source=webtop_search&spm_id_from=333.851
+https://search.bilibili.com/all?keyword=APIJSON
 ![image](https://user-images.githubusercontent.com/5738175/135413311-0207ec13-f7ea-4767-9e34-1a6d08438295.png)
 
 其它各种官方和第三方文档见首页相关推荐 <br >
