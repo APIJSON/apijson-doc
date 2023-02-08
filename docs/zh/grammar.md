@@ -233,7 +233,7 @@ http://localhost:端口号/get
 }
 ```
 
-正则表达式`^[0-9]+$`，查询`content`为纯数字的数据，[MySQL 的正则语法](http://www.runoob.com/mysql/mysql-regexp.html)如下：
+正则表达式`^[0-9]+$`，查询`content`为纯数字的数据，[MySQL 的正则语法](http://www.runoob.com/mysql/mysql-regexp.html) 如下：
 
 | 模式       | 描述                                                                                                    |
 | ---------- | ------------------------------------------------------------------------------------------------------- |
