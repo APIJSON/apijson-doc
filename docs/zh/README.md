@@ -4,6 +4,9 @@
 https://search.bilibili.com/all?keyword=APIJSON
 ![image](https://user-images.githubusercontent.com/5738175/135413311-0207ec13-f7ea-4767-9e34-1a6d08438295.png)
 
+本文档内容来源于 APIJSON 主项目 详细的说明文档.md，更新滞后于源文档，但浏览体验更好，如有疏漏以源文档为准 <br >
+https://github.com/Tencent/APIJSON/blob/master/%E8%AF%A6%E7%BB%86%E7%9A%84%E8%AF%B4%E6%98%8E%E6%96%87%E6%A1%A3.md
+
 其它各种官方和第三方文档见首页相关推荐 <br >
 https://github.com/Tencent/APIJSON#%E7%9B%B8%E5%85%B3%E6%8E%A8%E8%8D%90
 
