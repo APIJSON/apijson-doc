@@ -26,7 +26,7 @@ Eclipse 导入：
 
 顶部菜单 File > Import > Maven > Existing Maven Projects > Next > Browse
 
-选择项目所在目录 [/APIJSON-Demo-Master/APIJSON-Java-Server](https://github.com/APIJSON/APIJSON-Demo/tree/master/APIJSON-Java-Server)/APIJSONDemo
+选择项目所在目录 [/APIJSON-Demo-Master/APIJSON-Java-Server](https://github.com/APIJSON/APIJSON-Demo/tree/master/APIJSON-Java-Server)/APIJSONBoot
 
 当报依赖错误的时候，将同目录下的 libs 里面的 jar 包添加到 Build Path 中。
 ![install2](../.vuepress/public/assets/install2.png)
