@@ -418,56 +418,56 @@ SELECT `id`,`date`,`content`,`praiseUserIdList` FROM `thea`.`Moment` LIMIT 5 OFF
 
 在讲解关联查询的时候，我们需要先了解下表之间的关系
 
-现在有两张表 USER 和 MOMENT，两张表的关系是下面这样
+现在有两张表 Moment 和 User，两张表的关系是下面这样
 
 ![1545468294295](../.vuepress/public/assets/1545468294295.png)
 
-MOMENT 表示评论，每一条评论会有一个发表评论的用户 USER，所以 MOMENT 表里会有一个 USER 表的外键关联
+Moment 表示动态，类似微信朋友圈、QQ 空间的动态，每一条动态会有一个发表动态的用户 User，所以 Moment 表里会有一个和 User 表的外键关联：Moment.userId = User.id。
 
-对于这样的数据关系，我们在查询评论时，很多时候我们会连带着用户一起查处来，这样又如何操作呢
+对于这样的数据关系，我们在查询动态时，很多时候我们会连带着用户一起查处来，这样又如何操作呢
 
-```json
+```js
 {
   "[]": {
-    "Moment": {
-      "@column": "id,date,userId",
-      "id": 12
+    "Moment":{
+        "@column":"id,date,userId",
+        "id":12 // 注意 id 是主键，这个数组最多返回 1 条子项（如果 id=12 的表记录存在）
     },
-    "User": {
-      "id@": "/Moment/userId",
-      "@column": "id,name"
+    "User":{
+      "id@":"/Moment/userId", // 不要求物理外键，只要能关联即可
+      "@column":"id,name"
     }
   }
 }
 ```
 
-这个请求稍微复杂点，首先我们用`[]`对象表示我们是想查询出一个列表，这个列表包含两个部分`Moment`和`User`。
+这个请求稍微复杂点，首先我们用 `[]` 对象表示我们是想查询出一个列表，这个列表包含两个部分 `Moment` 和 `User`。
 
-其中`Moment`是我们想要查询的主要内容，它的写法也和一般查询数据时无异。
+其中 `Moment` 是我们想要查询的主要内容，它的写法也和一般查询数据时无异。
 
-`User`是与`Moment`相关联的数据，所以查询的时候我们需要用`id@`来表示他们之间的关联关系
+`User` 是与 `Moment` 相关联的数据，所以查询的时候我们需要用 `id@` 来表示他们之间的关联关系
 
-`/Moment/userId`中，最开始的`/`相当于是指明了`[]`的位置，`/Moment`表示`[]`对象下的`Moemnt`对象，`/Moment/userId`表示`Moemnt`的`userId`字段是与`User`的`id`关联的。
+`/Moment/userId` 中，最开始的 `/` 相当于是指明了 `[]` 的位置，`/Moment` 表示 `[]` 对象下的 `Moemnt` 对象，`/Moment/userId` 表示 `Moment` 的 `userId` 字段是与 `User` 的 `id` 关联的。这是一种缺省引用路径，这里等价于完整引用路径 `[]/Moment/userId`。
 
 响应的数据：
 
 ```json
 {
-  "[]": [
-    {
-      "Moment": {
-        "date": "2017-02-08 16:06:11.0",
-        "id": 12,
-        "userId": 70793
-      },
-      "User": {
-        "id": 70793,
-        "name": "Strong"
-      }
-    }
-  ],
-  "code": 200,
-  "msg": "success"
+    "[]": [
+        {
+            "Moment": {
+                "date": "2017-02-08 16:06:11.0",
+                "id": 12,
+                "userId": 70793
+            },
+            "User": {
+                "id": 70793,
+                "name": "Strong"
+            }
+        }
+    ],
+    "code": 200,
+    "msg": "success"
 }
 ```
 
