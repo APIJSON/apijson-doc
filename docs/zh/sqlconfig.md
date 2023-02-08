@@ -52,7 +52,7 @@
 
 ## 导入表
 
-在 [APIJSON-Demo-Master](https://github.com/APIJSON/APIJSON-Demo)/MySQL 目录下有一批 SQL 脚本，他们看起来是这样的：
+在 [APIJSON-Demo-Master](https://github.com/APIJSON/APIJSON-Demo)/MySQL/[single](https://github.com/APIJSON/APIJSON-Demo/tree/master/MySQL/single) 目录下有一批 SQL 脚本，他们看起来是这样的：
 
 ![use1](../.vuepress/public/assets/use1.png)
 
