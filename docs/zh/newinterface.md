@@ -111,7 +111,7 @@ INSERT INTO `apijson`.`access` (`id`, `debug`, `name`, `alias`, `get`, `head`, `
 <br />
 
 
-:first_quarter_moon_with_face:此处的介绍都只是简要介绍，只是为了引导刚刚接触APIJSON的道友快速了解APIJSON，并不代表APIJSON只有这些功能，具体功能详情参考下列图表
+:first_quarter_moon_with_face:此处的介绍都只是简要介绍，只是为了引导刚刚接触 APIJSON 的道友快速了解 APIJSON，并不代表 APIJSON 只有这些功能，具体功能详情参考下列图表
 
 #### 4. 完整功能图表
 https://github.com/Tencent/APIJSON/blob/master/Document.md#3
