@@ -222,7 +222,7 @@ http://localhost:端口号/get
 {
   "[]": {
     "Moment": {
-      "content?": "^[0-9]+$",
+      "content~": "^[0-9]+$",
       "@column": "id,date,content:text"
     }
   }
